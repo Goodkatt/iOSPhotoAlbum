@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-lu-hUB">
+                                <rect key="frame" x="51.5" y="20" width="98.5" height="21"/>
+                                <color key="backgroundColor" red="0.33236566185951233" green="0.9979516863822937" blue="0.71024352312088013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9746587872505188" green="0.33962440490722656" blue="0.3148902952671051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TsS-Wg-j1y">
+                                <rect key="frame" x="51.5" y="73" width="240" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LIr-kP-17s"/>
+                                    <constraint firstAttribute="width" secondItem="TsS-Wg-j1y" secondAttribute="height" multiplier="3:2" id="LfB-4L-Wfn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5e-tJ-sVc">
+                                <rect key="frame" x="51.5" y="303" width="240" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="jf6-qF-T7H"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-L8-J1J">
+                                <rect key="frame" x="51" y="265" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.97473412752151489" green="0.32741671800613403" blue="0.31089925765991211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Copy Photo"/>
+                                <connections>
+                                    <action selector="pressedCopyPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkz-7g-0tP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpB-22-hcy">
+                                <rect key="frame" x="51" y="471" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.64422100782394409" green="0.99448758363723755" blue="0.61201399564743042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="First">
+                                    <color key="titleColor" red="0.97458034753799438" green="0.35180836915969849" blue="0.31886711716651917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNn-Wa-9yo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YH-nm-jwm">
+                                <rect key="frame" x="89" y="471" width="32" height="30"/>
+                                <color key="backgroundColor" red="0.64422100780000002" green="0.9944875836" blue="0.61201399560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.9745803475" green="0.35180836920000003" blue="0.31886711719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2G-Ed-9o4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ves-OW-BPu">
+                                <rect key="frame" x="129" y="471" width="59" height="30"/>
+                                <color key="backgroundColor" red="0.64422100780000002" green="0.9944875836" blue="0.61201399560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" red="0.9745803475" green="0.35180836920000003" blue="0.31886711719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dlx-Ew-hZm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-Wy-34G">
+                                <rect key="frame" x="196" y="471" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.64422100780000002" green="0.9944875836" blue="0.61201399560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Last">
+                                    <color key="titleColor" red="0.9745803475" green="0.35180836920000003" blue="0.31886711719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedLast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2GI-M1-Hlc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-W9-fOi">
+                                <rect key="frame" x="234" y="471" width="45" height="30"/>
+                                <color key="backgroundColor" red="0.64422100780000002" green="0.9944875836" blue="0.61201399560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.9745803475" green="0.35180836920000003" blue="0.31886711719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VV7-Ve-gx2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66956698232226897" green="0.99746459722518921" blue="0.96986669301986694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sU0-L8-J1J" firstAttribute="centerX" secondItem="TsS-Wg-j1y" secondAttribute="centerX" id="3xl-Tx-ht7"/>
+                            <constraint firstItem="lUr-W9-fOi" firstAttribute="leading" secondItem="scw-Wy-34G" secondAttribute="trailing" constant="8" id="688-YF-ARC"/>
+                            <constraint firstItem="lUr-W9-fOi" firstAttribute="top" secondItem="D5e-tJ-sVc" secondAttribute="bottom" constant="8" id="DPn-fF-QcW"/>
+                            <constraint firstItem="D5e-tJ-sVc" firstAttribute="width" secondItem="D5e-tJ-sVc" secondAttribute="height" multiplier="3:2" id="JeU-WS-RDo"/>
+                            <constraint firstItem="scw-Wy-34G" firstAttribute="leading" secondItem="ves-OW-BPu" secondAttribute="trailing" constant="8" id="MCW-90-haA"/>
+                            <constraint firstItem="sU0-L8-J1J" firstAttribute="width" secondItem="TsS-Wg-j1y" secondAttribute="width" id="OKP-X6-WkN"/>
+                            <constraint firstItem="ves-OW-BPu" firstAttribute="top" secondItem="D5e-tJ-sVc" secondAttribute="bottom" constant="8" id="R4F-88-HJc"/>
+                            <constraint firstItem="D5e-tJ-sVc" firstAttribute="leading" secondItem="TsS-Wg-j1y" secondAttribute="leading" id="S0U-jm-H4b"/>
+                            <constraint firstItem="sU0-L8-J1J" firstAttribute="top" secondItem="TsS-Wg-j1y" secondAttribute="bottom" constant="32" id="Tll-Wb-lCP"/>
+                            <constraint firstItem="TsS-Wg-j1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-16" id="Txm-UM-bTM"/>
+                            <constraint firstItem="scw-Wy-34G" firstAttribute="top" secondItem="D5e-tJ-sVc" secondAttribute="bottom" constant="8" id="U7B-yi-6WI"/>
+                            <constraint firstItem="8YH-nm-jwm" firstAttribute="top" secondItem="D5e-tJ-sVc" secondAttribute="bottom" constant="8" id="aJD-0r-7og"/>
+                            <constraint firstItem="TsS-Wg-j1y" firstAttribute="leading" secondItem="7fL-lu-hUB" secondAttribute="leading" id="cx7-RG-RvQ"/>
+                            <constraint firstItem="TsS-Wg-j1y" firstAttribute="top" secondItem="7fL-lu-hUB" secondAttribute="bottom" constant="32" id="eRI-78-ce3"/>
+                            <constraint firstItem="bpB-22-hcy" firstAttribute="top" secondItem="D5e-tJ-sVc" secondAttribute="bottom" constant="8" id="h4g-xT-5qp"/>
+                            <constraint firstItem="8YH-nm-jwm" firstAttribute="leading" secondItem="bpB-22-hcy" secondAttribute="trailing" constant="8" id="p3x-0L-MJw"/>
+                            <constraint firstItem="ves-OW-BPu" firstAttribute="leading" secondItem="8YH-nm-jwm" secondAttribute="trailing" constant="8" id="q6H-4c-Go1"/>
+                            <constraint firstItem="7fL-lu-hUB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="seK-9n-hqc"/>
+                            <constraint firstItem="bpB-22-hcy" firstAttribute="leading" secondItem="D5e-tJ-sVc" secondAttribute="leading" id="w8Y-8m-AP8"/>
+                            <constraint firstItem="D5e-tJ-sVc" firstAttribute="top" secondItem="sU0-L8-J1J" secondAttribute="bottom" constant="8" id="wax-V6-yyK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="copyPhotoButton" destination="sU0-L8-J1J" id="Ufi-8j-uOO"/>
+                        <outlet property="deleteButton" destination="lUr-W9-fOi" id="lo5-Zp-pHR"/>
+                        <outlet property="firstButton" destination="bpB-22-hcy" id="rg0-8W-cXB"/>
+                        <outlet property="firstImageView" destination="TsS-Wg-j1y" id="tdE-Cc-eUc"/>
+                        <outlet property="lastButton" destination="scw-Wy-34G" id="Eoe-h8-biP"/>
+                        <outlet property="nextButton" destination="8YH-nm-jwm" id="SzB-Mv-vRl"/>
+                        <outlet property="previousButton" destination="ves-OW-BPu" id="EyU-n5-KF2"/>
+                        <outlet property="secondImageView" destination="D5e-tJ-sVc" id="Yqv-ie-98f"/>
+                        <outlet property="titleLabel" destination="7fL-lu-hUB" id="rzQ-4i-qfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
